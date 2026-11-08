@@ -1,6 +1,6 @@
 # Privacy policy
 
-Effective 8 November 2026. This policy covers AW Schedule Manager by Ahmed Wassel, as a Claude Desktop extension and as a Claude Code plugin.
+Effective 8 November 2026 (update check added in 1.5.1). This policy covers AW Schedule Manager by Ahmed Wassel, as a Claude Desktop extension and as a Claude Code plugin.
 
 ## Data collected
 
@@ -17,9 +17,18 @@ The software uses your data only to answer your requests and make the edits you 
 - in XER files you ask it to create
 - the path of the database you chose: in the software's data folder (Claude Code), or in the extension settings or the `.aw-schedule-manager` folder in your user folder (Claude Desktop)
 
+## Update check
+
+The software connects to the internet only to check for updates, and only in two cases:
+
+- when you ask Claude to run `check_for_updates`;
+- if you turn on the **Check for updates** setting (off by default): then at most once a day.
+
+The check asks GitHub (github.com, a service of GitHub, Inc.) for the latest release of AW Schedule Manager. The only information sent is the version number of the software you have, in the request header. Like any web request, GitHub sees your IP address; the developer receives nothing. The answer and the time of the last check are kept in the software's data folder on your computer. No project data is ever sent.
+
 ## Sharing
 
-The software sends data to no service of its own. What a tool returns goes to Claude as part of your conversation, under your agreement with Anthropic. Check that sharing project data with an AI service is allowed by your company and contract.
+Apart from the update check above, the software sends data to no service. What a tool returns goes to Claude as part of your conversation, under your agreement with Anthropic. Check that sharing project data with an AI service is allowed by your company and contract.
 
 ## Retention
 

@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.5.1
+- `check_for_updates`: ask Claude whether a newer version is out, with the download link and what's new.
+- **Check for updates** setting (off by default): when on, once a day you are told about a new version.
+- Settings now say to turn the extension off and on after a change, and the install steps point to
+  **Settings > Desktop app > Extensions**.
+
 ## 1.5.0
 - **Install with no Python and no commands.** Claude Desktop users install `aw-schedule-manager-1.5.0.mcpb` with a
   double-click. Claude Code users install from the marketplace as before; the plugin now runs a ready program, so

@@ -4,7 +4,8 @@
       "command": "${CLAUDE_PLUGIN_ROOT}/server/aw-schedule-manager.exe",
       "args": [],
       "env": {
-        "CLAUDE_PLUGIN_OPTION_READ_ONLY": "${user_config.read_only}"
+        "CLAUDE_PLUGIN_OPTION_READ_ONLY": "${user_config.read_only}",
+        "AW_AUTO_UPDATE_CHECK": "${user_config.auto_update_check}"
       }
     }
   }

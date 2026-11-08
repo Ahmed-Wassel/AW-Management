@@ -15,10 +15,11 @@ It has been tested on P6 Professional 23 with SQLite. Other versions have not be
 ### Claude Desktop (easiest)
 
 1. Download `aw-schedule-manager-<version>.mcpb` from the latest [release](https://github.com/Ahmed-Wassel/AW-Management/releases/latest).
-2. Double-click it (or drag it onto Claude Desktop > **Settings > Extensions**) and click **Install**.
+2. In Claude Desktop open **Settings > Desktop app > Extensions** and drag the file onto the page (or double-click the file). Click **Install**.
 3. In the extension settings, pick your **P6 database file**. Leave **Read only** on until you want Claude to edit.
+4. **After changing any setting, turn the extension off and on** (or restart Claude Desktop), so it starts with the new settings.
 
-**To update:** download the new `.mcpb` and open it the same way. Your settings stay.
+**To update:** download the new `.mcpb` and install it the same way; your settings stay. To be told when there is a new version, turn on **Check for updates** in the extension settings (off by default), or ask Claude to run `check_for_updates`.
 
 ### Claude Code
 
@@ -29,7 +30,9 @@ claude plugin install aw-schedule-manager@aw-schedule-manager
 
 This needs [Git](https://git-scm.com/downloads). Then start Claude Code and ask: `Run choose_database`. A window opens so you can browse to your P6 database file. Then run `/reload-plugins`.
 
-The plugin starts in read-only mode. To allow editing, run `/plugin configure aw-schedule-manager`, turn off **Read only**, and start a new session. **To update:** run `/plugin`, choose the marketplace and update it.
+The plugin starts in read-only mode. To allow editing, run `/plugin`, open **Installed > aw-schedule-manager > Configure options**, turn off **Read only**, then run `/reload-plugins`.
+
+**To update:** run `/plugin`, open the **Marketplaces** tab, select **aw-schedule-manager** and choose **Update marketplace**. To get updates automatically, choose **Enable auto-update** there (off by default for marketplaces outside Anthropic's).
 
 **Use a copy of your database first.**
 
