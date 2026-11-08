@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.2
+- The backup note is shown once: every edit still makes an automatic backup, but only the first edit of a session
+  reports the backup file, so Claude no longer repeats it after every change (`list_backups` shows them all).
+
 ## 1.5.1
 - `check_for_updates`: ask Claude whether a newer version is out, with the download link and what's new.
 - **Check for updates** setting (off by default): when on, once a day you are told about a new version.
