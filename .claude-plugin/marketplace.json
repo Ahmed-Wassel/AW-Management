@@ -1,0 +1,14 @@
+{
+  "name": "aw-schedule-manager",
+  "description": "AW Schedule Manager for Primavera P6",
+  "owner": {
+    "name": "Ahmed Wassel"
+  },
+  "plugins": [
+    {
+      "name": "aw-schedule-manager",
+      "source": "./",
+      "description": "Read and edit your Primavera P6 SQLite database, and build schedules as XER files."
+    }
+  ]
+}

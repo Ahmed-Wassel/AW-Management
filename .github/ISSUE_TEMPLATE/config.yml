@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Licence or permission request
+    url: https://github.com/Ahmed-Wassel/AW-Management/blob/main/LICENSE
+    about: Read the licence first, then open a problem report titled "Licence request" to ask.

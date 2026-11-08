@@ -1,0 +1,91 @@
+AW SCHEDULE MANAGER - END USER LICENCE AGREEMENT
+
+Copyright (c) 2026 Ahmed Wassel. All rights reserved.
+
+By installing, copying or using AW Schedule Manager you accept this agreement. If you do not accept it, do not
+install or use the Software.
+
+1. DEFINITIONS
+"Owner" means Ahmed Wassel. "Software" means AW Schedule Manager in any form, including its compiled program,
+source code, extension and plugin files, documentation, names, logo, tool names and descriptions, and every update
+or new version of any of them. "You" means the person or organisation that installs or uses the Software.
+
+2. OWNERSHIP
+The Software is licensed, not sold. The Owner owns all rights, title and interest in the Software, including all
+copyright, trade secrets, know-how and other intellectual property rights, worldwide. The names "AW Schedule
+Manager" and "AW" used with the Software, and its logo, are trademarks of the Owner. The source code is a
+confidential trade secret of the Owner. Nothing in this agreement transfers any of these rights to You.
+
+3. LICENCE
+Subject to this agreement, the Owner grants You a personal, worldwide, non-exclusive, non-transferable,
+non-sublicensable and revocable licence, free of charge, to install the unmodified Software on computers You
+control and to use it for Your own work, including commercial work.
+
+4. RESTRICTIONS
+Except where the Owner has given prior written permission, or where a law that cannot be excluded by contract
+allows it, You may not:
+  a. copy the Software, other than the copies made automatically when it is installed, updated and run, and one
+     backup copy;
+  b. modify, translate, adapt or create derivative works of the Software;
+  c. decompile, disassemble, unpack, decrypt or reverse engineer the Software, or try to extract or rebuild its
+     source code, or help anyone else do so;
+  d. distribute, publish, sell, rent, lease, lend, host, sublicense or otherwise make the Software or any part of
+     it available to anyone else, in any form, including in another product, bundle, marketplace or repository;
+  e. remove, alter or hide any copyright notice, licence text, name or trademark of the Owner;
+  f. present the Software, or any part or derivative of it, as Your own work or anyone else's, or publish it under
+     another name;
+  g. use the Software, its design, tool definitions or behaviour to develop, train or improve a competing product
+     or service;
+  h. disable or work around the read-only mode, backups or other safety features of the Software.
+
+5. UPDATES
+The Owner may release, change or stop updates, features or the Software at any time, without notice. Updates are
+covered by this agreement unless they come with their own terms.
+
+6. FEEDBACK
+If You send ideas, suggestions or bug reports, the Owner may use them freely, without any obligation to You.
+
+7. TERMINATION
+This licence ends automatically, without notice, if You break any term of this agreement. The Owner may also end it
+for any reason by notice to You, including by a notice published with the Software. When it ends You must stop
+using the Software and delete every copy. Sections 2, 4, 6 and 8 to 12 survive the end of this agreement.
+
+8. NO WARRANTY
+THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY AND NON-INFRINGEMENT. THE SOFTWARE READS
+AND CAN CHANGE A PRIMAVERA P6 DATABASE DIRECTLY, A METHOD NOT SUPPORTED BY ORACLE. YOU ARE SOLELY RESPONSIBLE FOR
+KEEPING BACKUPS, FOR CHECKING EVERY RESULT AND EDIT, AND FOR EVERY DECISION, SCHEDULE, CLAIM OR REPORT YOU BASE ON
+THE SOFTWARE. ALWAYS WORK ON A COPY OF YOUR DATABASE FIRST.
+
+9. LIMITATION OF LIABILITY
+TO THE FULLEST EXTENT ALLOWED BY LAW, THE OWNER IS NOT LIABLE FOR ANY LOSS OR DAMAGE OF ANY KIND ARISING FROM OR
+CONNECTED WITH THE SOFTWARE OR ITS USE, INCLUDING LOSS OR CORRUPTION OF DATA, SCHEDULES OR PROJECTS, DELAY, LOST
+PROFIT, BUSINESS OR CONTRACT, AND ANY INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGE, WHETHER IN CONTRACT, TORT OR
+OTHERWISE, EVEN IF ADVISED OF ITS POSSIBILITY. WHERE LIABILITY CANNOT BE EXCLUDED, THE OWNER'S TOTAL LIABILITY IS
+LIMITED TO THE AMOUNT YOU PAID FOR THE SOFTWARE, WHICH IS ZERO WHEN IT WAS PROVIDED FREE OF CHARGE.
+
+10. INDEMNITY
+You will defend and compensate the Owner against any claim, loss, damage or cost (including reasonable legal fees)
+arising from Your use of the Software, Your data, or Your breach of this agreement.
+
+11. THIRD PARTIES
+The Software is an independent work, not made, endorsed or supported by Oracle or Anthropic. "Primavera" and "P6"
+are trademarks of Oracle and/or its affiliates; "Claude" is a trademark of Anthropic. The Software includes
+third-party components under their own licences, listed in THIRD_PARTY_NOTICES.md; those licences apply to those
+components only.
+
+12. LAW AND DISPUTES
+This agreement is governed by the laws of the Kingdom of Saudi Arabia. The competent courts of Riyadh have
+jurisdiction over any dispute arising from or connected with it, and You submit to that jurisdiction. The Owner may
+also bring proceedings, including for an injunction or other urgent relief to protect the Owner's intellectual
+property, in the courts of any country where You live, do business or use the Software, or where an infringement
+takes place.
+
+13. GENERAL
+This agreement is the whole agreement between You and the Owner about the Software. If a court finds any part of it
+unenforceable, that part is applied to the extent allowed and the rest stays in force. A failure or delay by the
+Owner to enforce a right is not a waiver of it. You may not transfer this agreement. If this agreement is
+translated, the English text prevails.
+
+To ask for permission, a different licence, or to report an infringement:
+https://github.com/Ahmed-Wassel/AW-Management/issues

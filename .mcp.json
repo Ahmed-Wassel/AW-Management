@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "schedule": {
+      "command": "${CLAUDE_PLUGIN_ROOT}/server/aw-schedule-manager.exe",
+      "args": [],
+      "env": {
+        "CLAUDE_PLUGIN_OPTION_READ_ONLY": "${user_config.read_only}"
+      }
+    }
+  }
+}

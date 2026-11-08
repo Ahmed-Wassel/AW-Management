@@ -1,0 +1,43 @@
+name: Problem report
+description: Something doesn't work as expected
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please don't attach your P6 database or any project data: this page is public.
+  - type: input
+    id: version
+    attributes:
+      label: AW Schedule Manager version
+      description: Shown in Claude Desktop > Settings > Extensions, or in the release you installed.
+      placeholder: "1.5.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: app
+    attributes:
+      label: Where do you use it?
+      options: [Claude Desktop, Claude Code, Cowork]
+    validations:
+      required: true
+  - type: input
+    id: p6
+    attributes:
+      label: P6 version
+      placeholder: "P6 Professional 23.12, SQLite"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+      description: The steps, the tool that failed and its error message.
+    validations:
+      required: true
+  - type: textarea
+    id: compat
+    attributes:
+      label: Output of check_compatibility
+      description: Ask Claude to run check_compatibility and paste the result (remove anything confidential).
+      render: json
