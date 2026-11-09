@@ -1,7 +1,7 @@
 {
   "name": "aw-schedule-manager",
   "displayName": "AW Schedule Manager",
-  "version": "1.5.2",
+  "version": "1.6.0",
   "description": "Read and edit your Primavera P6 SQLite database, and build schedules as XER files.",
   "author": {
     "name": "Ahmed Wassel"

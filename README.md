@@ -50,6 +50,9 @@ The plugin starts in read-only mode. To allow editing, run `/plugin`, open **Ins
 - Codes, fields and notes: `create_activity_code`, `assign_activity_code`, `create_udf`, `set_udf_value`, `add_activity_notebook`, `add_activity_steps`.
 - Resources and costs: `add_resources_and_costs`, `update_assignment`, `remove_resource_assignments`, `update_resource`, `delete_resource`, `add_expense`, `delete_expenses`.
 - Calendars: `create_calendar` (work week, hours with breaks, holidays and yearly holidays).
+- Update quality and reports: `audit_update`, `compare_updates`, `create_pdf_report`, `create_excel_report` (reports with the content you ask for), `delay_windows`, `create_update`, `import_progress_from_excel`, `export_excel`, `look_ahead`, `earned_value`, `resource_histogram`, `what_if_duration`.
+- Projects: `create_project`, `copy_project`, `delete_project`; expenses: `update_expense`.
+- Admin and Enterprise data: `list_enterprise_items`, `edit_enterprise_item` (cost accounts, funding sources, OBS, roles), `assign_cost_account`, `list_codes`, `create_code_values`, `assign_code`, `delete_code` (resource, project, role and assignment codes), `manage_eps`, `move_project_to_eps`, `manage_resource_shift`, `manage_resource_curve`.
 - Project: `set_project_start`, `set_data_date`, `set_project_settings`, `create_baseline` (a copy of the project as its baseline), `assign_project_baseline`, `restore_backup`.
 
 Scheduling (F9) and resource leveling stay in P6. `create_baseline` refuses, writing nothing, when a project holds data it cannot copy (funding, risks, documents and similar); make that baseline in P6.
