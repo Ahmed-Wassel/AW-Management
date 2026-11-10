@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.7.1
+- **Fewer tokens, same features.** The tool list Claude reads at the start of every session is about a quarter smaller
+  (descriptions halved): the rules every tool shares (F5/F9, dry runs, units, naming, where files go) are now said once in the
+  server instructions instead of in each tool. Schemas no longer repeat empty defaults.
+- Tool results are sent as compact JSON. Long lists start shorter (critical_path 60, list_relationships 100,
+  find_activities 100, compare_projects 60, baseline_variance 80, run_sql 200 rows); every answer still gives the full count
+  and limit can be raised.
+- Faster edits: whether P6 is open is checked at most every 5 seconds instead of on every edit.
+- A one-column .csv no longer fails to load in import_progress_from_excel and renumber_activities.
+
 ## 1.7.0
 - **16 new tools for keeping a P6 database and its schedules in order** (103 tools in all). The tools that change many rows
   check first and have a dry run: `dry_run=true` is the default and nothing is written until you say `dry_run=false`.
