@@ -1,5 +1,26 @@
 # Changelog
 
+## 1.7.0
+- **16 new tools for keeping a P6 database and its schedules in order** (103 tools in all). The tools that change many rows
+  check first and have a dry run: `dry_run=true` is the default and nothing is written until you say `dry_run=false`.
+  - **Audits (read only):** `update_trend` (finish date, float, critical activities and % complete across a series of updates),
+    `logic_audit` (duplicate relationships, loops, redundant FS links, long lags, leads, SF links, links to LOE, activities with many
+    links), `calendar_audit` (usage, same-name and look-alike calendars, calendars whose holidays run out), `resource_audit`
+    (resources never assigned, without a price, with the same name, zero assignments), `activity_code_audit` (unused types and
+    values), `database_health` (size, integrity, deleted rows still stored, ID counters, orphans, backup size) and
+    `list_admin_categories`.
+  - **Fixes:** `fix_logic` (remove exact duplicates and redundant FS links; different-type duplicates only on request, strongest kept),
+    `renumber_activities` (replace text or regex, mapping, an Excel or CSV file, a UDF such as "New Activity ID", or a sequence; checks
+    for duplicates and length), `update_calendar` (add or remove holidays, yearly holidays, worked days, rename, delete unused,
+    many calendars at once with wildcards), `manage_resource_rates` (list, add, escalate by a percentage from a date, delete a price;
+    optionally re-price open assignments), `purge_deleted` (remove rows deleted long ago and shrink the file; P6 must be closed),
+    `edit_activity_code` (rename, merge duplicates, delete unused, copy a code to another project, assign by name or ID pattern),
+    `global_change` (bulk edit of the activities that match conditions, like P6 Global Change), `edit_admin_category` (expense
+    categories, units of measure, notebook topics, project phases, document categories and statuses, risk categories, currencies) and
+    `copy_wbs` (copy a WBS branch with activities, relationships, resources, codes, UDFs and expenses, inside a project or into another).
+- Reading a P6 calendar's holidays and working times works on the exact stored data, so changing holidays leaves every other
+  exception and the work week untouched.
+
 ## 1.6.0
 - **Update quality and reports** (12 new tools; nothing in P6 is changed by the report tools). Reports have no fixed layout: the
   data tools give the figures and `create_pdf_report` / `create_excel_report` write exactly the sections, tables, charts and
