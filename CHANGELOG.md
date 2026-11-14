@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.9.0
+- **Quick backups for big databases.** A full copy of a 10 GB database took minutes, so the edit gave up. Above 1 GB
+  (`AW_P6_FULL_BACKUP_MAX_MB`) the automatic backup now saves only the project(s) the edit names (every table with proj_id)
+  plus the shared tables (resources, calendars, codes, EPS...; P6's own logs and counters are left out, and so is a shared table
+  over 200 MB): about a second and a few MB whatever the database size (tested: 2.9 GB database, 0.7 s, 2 MB; the full copy took
+  115 s). A later edit of the same message on another project adds a backup for that project. Both kinds share the same limit
+  of 15 files in all, not per project. `restore_backup` on a project backup changes only the rows that differ (rows added after
+  it removed, changed ones put back, removed ones re-added), so P6's own triggers keep dates and its deletion log right; shared
+  rows that other projects added before the backup are kept. `list_backups` shows `kind` (full / project) and the projects.
+  Databases up to 1 GB keep the full copy; `purge_deleted` always takes a full copy.
+- The instructions tell Claude never to switch to an XER file or another way because of a backup.
+- Backups are listed by file time (two backups made in the same second keep their order).
+- **Automatic F5 + F9, in the background.** After an edit that needs a refresh, `p6mcp/autorefresh.py` first closes every window open inside P6 (WM_CLOSE, like its X / Cancel; internal helper windows are left alone), then posts F5 and F9 to the P6 window and a click message to the Schedule button. P6 is not brought to the front and the real mouse and keyboard are not used. It runs synchronously (about 3 s) and the edit result says what was done in `p6_auto_refresh`; the first edit of a session also carries `p6_windows_note`, and the instructions tell Claude to warn the user before the first edit of each message. `AW_P6_AUTO_REFRESH=0` turns it off, `AW_P6_AUTO_SCHEDULE=0` sends F5 only.
+- **Calibrates itself to the P6 version.** The first automatic refresh (or the new tool `calibrate_p6_refresh`) finds the P6 main window, checks F5 makes P6 read the database, opens the Schedule dialog with F9, finds its Schedule button (known captions in several UI languages, or `button_text`) and tries the click messages (`post_lbutton`, `bm_click`, `post_enter`) until one works. What worked is saved per PM.exe in `p6_refresh_profile.json` next to `settings.json`; when it stops fitting (P6 updated) it calibrates again once.
+
 ## 1.8.0
 - **New: `run_tool(tool, arguments)`.** Runs any tool by name, also one that `load_tools` added but the client has not listed yet
   (some clients ignore `tools/list_changed`). `load_tools` now says so in its reply.
